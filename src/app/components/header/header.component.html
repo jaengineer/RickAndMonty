@@ -1,0 +1,15 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-menu-button menu="firstMenu"></ion-menu-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title color="dark-yellow" [translate]="'HOME.title'"></ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="filter()">
+        <ion-icon [name]="!showFilter ? 'filter' : 'close'"> </ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>

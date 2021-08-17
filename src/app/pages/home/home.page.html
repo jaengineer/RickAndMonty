@@ -1,0 +1,10 @@
+<app-header (setFilter)="setFilter( $event )"></app-header>
+
+<ion-content color="dark">
+  <app-filters [hidden]="!showFilters"  (filter)="filter( $event )"></app-filters>
+  <app-character [characters]="characters"></app-character>
+</ion-content>
+
+<app-pagination *ngIf="characters" 
+                [pages]="characters.info.pages"
+                (setPage)="setPage( $event )"></app-pagination>

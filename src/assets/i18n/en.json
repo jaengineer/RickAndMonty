@@ -1,0 +1,33 @@
+{
+    "HOME": {
+        "title": "Rick and Monty"
+    },
+    "FILTER": {
+        "of": "of",
+        "searchByName": "Search by name",
+        "filterStatus": "Filter by status",
+        "filterGender": "Filter by gender"
+    },
+    "CHARACTER": {
+        "titleList" : "List of characters",
+        "details"   : "Details",
+        "gender"    : "Gender:",
+        "location"  : "Location:",
+        "species"   : "Species:",
+        "status"    : "Status:",
+        "type"      : "Type:"
+    },
+    "MENU" : {
+        "favorites": "Favorites"
+    },
+    "MESSAGES" : {
+        "favouritesDeleted" : "This item was deleted of the favourites list",
+        "favouritesAdded"   : "This item was added to your favourites list",
+        "addFavorites"      : "Add to favorites",
+        "removeFavorites"   : "Remove from favorites"
+    },
+    "ERROR": {
+        "notFound": "Not found",
+        "serverError": "Server error"
+    }
+}

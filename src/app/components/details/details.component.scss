@@ -1,0 +1,27 @@
+
+
+.title {
+    width: 100%;
+    position: absolute;
+    color: white;
+    padding: 5px 5px 57px 5px;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    ion-button{ 
+        --box-shadow: none;
+        float: right;
+        margin-top: 0px;
+        ion-icon {
+            font-size: 30px;
+        }
+    }
+}
+
+ion-label {
+    text-transform:none
+}
+h5 {
+    color: white;
+}

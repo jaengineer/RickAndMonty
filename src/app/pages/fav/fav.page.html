@@ -1,0 +1,22 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-back-button></ion-back-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title [translate]="'MENU.favorites'">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid fixed *ngIf="characters">
+    <ion-row>
+      <ion-col size="3" *ngFor="let character of characters">
+        <ion-card mode="md" color="dark" (click)="openDetails( character )">
+          <app-preload-image [url]="character.image"></app-preload-image>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>

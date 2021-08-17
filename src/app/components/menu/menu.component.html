@@ -1,0 +1,21 @@
+
+<ion-menu contentId="main" side="start" menuId="firstMenu" contentId="main">
+  
+  <ion-header class="ion-no-border">
+    <ion-toolbar color="dark">
+      <ion-title color="dark-yellow" [translate]="'HOME.title'"></ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content color="dark">
+    <ion-list lines="none">
+      <ion-menu-toggle *ngFor="let option of options | async">
+        <ion-item [routerLink]="option.redirectTo" color="dark">
+          <ion-icon slot="start" [name]="option.icon"></ion-icon>
+          <ion-label>{{ 'MENU.'+option.name | translate }}</ion-label>
+       </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>

@@ -24,3 +24,30 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+ion-content {
+    --background: var(--ion-color-dark) !important;
+    ion-label {
+        color: white;
+    }
+}
+
+.toastDanger {
+    border-radius: 4px;
+    --background: #ae0000;
+    color: white;
+    line-height: 1.429;
+    font-size: 16px;
+    padding: 5px;
+    --button-color: white;
+  }
+
+.toastSuccess {
+    border-radius: 4px;
+    --background: green;
+    color: white;
+    line-height: 1.429;
+    font-size: 16px;
+    padding: 5px;
+    --button-color: white;
+}

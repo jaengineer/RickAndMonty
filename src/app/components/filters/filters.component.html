@@ -1,0 +1,25 @@
+<ion-toolbar color="dark">
+  <ion-searchbar placeholder="{{'FILTER.searchByName' | translate }}" 
+  animated
+  [value]="textSearch"
+  (ionChange)="emitFilter($event,'name')" >
+</ion-searchbar>
+  
+</ion-toolbar>
+
+<ion-grid fixed class="grid-filter">
+  <ion-row>
+    <ion-col size="6">
+      <ion-label [translate]="'FILTER.filterStatus'"></ion-label>
+      <ion-select (ionChange)="emitFilter($event,'status')" [(ngModel)]="statusSelected" cancelText="Cancelar" interface="popover">
+        <ion-select-option  [value]="status" *ngFor="let status of statuses"> {{ status }}</ion-select-option>
+      </ion-select>
+    </ion-col>
+    <ion-col size="6">
+      <ion-label [translate]="'FILTER.filterGender'"></ion-label>
+      <ion-select (ionChange)="emitFilter($event,'gender')" [(ngModel)]="genderSelected" cancelText="Cancelar" interface="popover">
+        <ion-select-option  [value]="g" *ngFor="let g of gender"> {{ g }}</ion-select-option>
+      </ion-select>
+    </ion-col>
+  </ion-row>
+</ion-grid>

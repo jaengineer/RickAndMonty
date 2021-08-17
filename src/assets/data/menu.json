@@ -1,0 +1,7 @@
+[
+    {
+        "icon": "star-outline",
+        "name": "favorites",
+        "redirectTo": "/fav"
+     }
+]

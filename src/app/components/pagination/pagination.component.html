@@ -1,0 +1,25 @@
+<ion-footer class="ion-no-border">
+  <ion-toolbar color="dark">
+    <ion-buttons slot="end">
+
+      <ion-button *ngIf="pages > 1 && page > 1" 
+                  (click)="prev()"
+                  color="dark-yellow" slot="icon-only"> 
+        <ion-icon name="chevron-back"> </ion-icon>
+      </ion-button>
+
+      <ion-button>{{ page }}</ion-button>
+  
+      <ion-button *ngIf="pages > 1 && page!==pages" 
+                  (click)="next()"
+                  color="dark-yellow" slot="icon-only">
+        <ion-icon name="chevron-forward"> </ion-icon>
+      </ion-button>
+      
+      <ion-button mode="ios">
+        {{ 'FILTER.of' | translate }}
+        {{ pages }}
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
